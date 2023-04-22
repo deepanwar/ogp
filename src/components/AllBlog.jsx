@@ -7,11 +7,32 @@ const AllBlogs = () => {
   return (
     <>
       <Helmet>
-        <title>All Blogs</title>
+        <title>
+          Design+Code - Learn to design and code React and Swift apps
+        </title>
         <meta
           name="description"
           content="Learn design and code by building real apps with React and Swift. Complete courses about UI design, web and iOS development using Figma, CSS, React Hooks and SwiftUI."
         />
+
+        {/* Twitter meta tags below */}
+        <meta name="twitter:card" content="summary" />
+        <meta
+          name="twitter:image"
+          content="https://designcode.io/cloud/v2/twitter.jpg"
+        />
+        <meta
+          name="twitter:title"
+          content="Design+Code - Learn to design and code React and Swift apps"
+        />
+        <meta name="twitter:creator" content="@diepsteph" />
+        <meta name="twitter:site" content="@diepsteph" />
+        <meta
+          name="twitter:description"
+          content="Learn design and code by building real apps with React and Swift. Complete courses about UI design, web and iOS development using Figma, CSS, React Hooks and SwiftUI."
+        />
+
+        {/* Facebook meta tags below */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="www.designcode.io" />
         <meta

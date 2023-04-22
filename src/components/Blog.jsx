@@ -19,13 +19,46 @@ const Blog = () => {
     currentBlog && (
       <>
         <Helmet>
-          <title>{currentBlog?.title}</title>
-          <meta name="description" content={currentBlog?.description} />
+          <title>
+            Design+Code - Learn to design and code React and Swift apps
+          </title>
+          <meta
+            name="description"
+            content="Learn design and code by building real apps with React and Swift. Complete courses about UI design, web and iOS development using Figma, CSS, React Hooks and SwiftUI."
+          />
+
+          {/* Twitter meta tags below */}
+          <meta name="twitter:card" content="summary" />
+          <meta
+            name="twitter:image"
+            content="https://designcode.io/cloud/v2/twitter.jpg"
+          />
+          <meta
+            name="twitter:title"
+            content="Design+Code - Learn to design and code React and Swift apps"
+          />
+          <meta name="twitter:creator" content="@diepsteph" />
+          <meta name="twitter:site" content="@diepsteph" />
+          <meta
+            name="twitter:description"
+            content="Learn design and code by building real apps with React and Swift. Complete courses about UI design, web and iOS development using Figma, CSS, React Hooks and SwiftUI."
+          />
+
+          {/* Facebook meta tags below */}
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="www.blogs.io" />
-          <meta property="og:title" content={currentBlog?.title} />
-          <meta property="og:description" content={currentBlog?.description} />
-          <meta property="og:image" content={currentBlog?.image} />
+          <meta property="og:url" content="www.designcode.io" />
+          <meta
+            property="og:title"
+            content="Design+Code - Learn to design and code React and Swift apps"
+          />
+          <meta
+            property="og:description"
+            content="Learn design and code by building real apps with React and Swift. Complete courses about UI design, web and iOS development using Figma, CSS, React Hooks and SwiftUI."
+          />
+          <meta
+            property="og:image"
+            content="https://designcode.io/cloud/v2/twitter.jpg"
+          />
         </Helmet>
         <div className="flex flex-col max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center my-10">
