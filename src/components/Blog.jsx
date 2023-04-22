@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { blogs } from '../data';
+import { Helmet } from 'react-helmet-async';
 
 const Blog = () => {
   const { id: blogId } = useParams();
@@ -20,6 +20,9 @@ const Blog = () => {
       <>
         <Helmet>
           <title>{currentBlog?.title}</title>
+          <meta name="description" content={currentBlog?.description} />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="www.blogs.io" />
           <meta property="og:title" content={currentBlog?.title} />
           <meta property="og:description" content={currentBlog?.description} />
           <meta property="og:image" content={currentBlog?.image} />
